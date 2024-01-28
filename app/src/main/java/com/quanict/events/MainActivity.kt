@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.quanict.events.databinding.ActivityMainBinding
+import com.quanict.events.databinding.ActivityCalendarBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +13,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        //setContentView(binding.root)
+        setContentView(R.layout.activity_calendar)
 
         // Example of a call to a native method
         binding.sampleText.text = stringFromJNI()
